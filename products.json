@@ -1,0 +1,29 @@
+[
+	{
+		"id": 2,
+		"title": "Papa negra",
+		"description": "Papa negra de alta calidad y economica",
+		"price": 400,
+		"thumbnail": "papaNegra.jpg",
+		"code": "C003",
+		"stock": 30
+	},
+	{
+		"id": 3,
+		"title": "Zanahoria",
+		"description": "Deliciosa zanahoria fresca",
+		"price": 300,
+		"thumbnail": "zanahoria.jpg",
+		"code": "C019",
+		"stock": 100
+	},
+	{
+		"id": 4,
+		"title": "Cebolla",
+		"description": "Cebolla blanca de alta calidad",
+		"price": 900,
+		"thumbnail": "cebollaBlanca.jpg",
+		"code": "C017",
+		"stock": 80
+	}
+]
