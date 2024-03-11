@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "title": "Tomate",
+        "description": "Tomate rojo fresco",
+        "price": 600,
+        "thumbnail": "tomate.jpg",
+        "code": "C001",
+        "stock": 50
+    },
+    {
+        "id": 2,
+        "title": "Papa negra",
+        "description": "Papa negra de alta calidad y económica",
+        "price": 400,
+        "thumbnail": "papaNegra.jpg",
+        "code": "C003",
+        "stock": 30
+    },
+    {
+        "id": 3,
+        "title": "Zanahoria",
+        "description": "Deliciosa zanahoria fresca",
+        "price": 300,
+        "thumbnail": "zanahoria.jpg",
+        "code": "C019",
+        "stock": 100
+    },
+    {
+        "id": 4,
+        "title": "Cebolla",
+        "description": "Cebolla blanca de alta calidad",
+        "price": 900,
+        "thumbnail": "cebollaBlanca.jpg",
+        "code": "C017",
+        "stock": 80
+    },
+    {
+        "id": 5,
+        "title": "Lechuga",
+        "description": "Lechuga fresca y crujiente",
+        "price": 500,
+        "thumbnail": "lechuga.jpg",
+        "code": "C005",
+        "stock": 60
+    },
+    {
+        "id": 6,
+        "title": "Pimiento",
+        "description": "Pimiento rojo grande y jugoso",
+        "price": 700,
+        "thumbnail": "pimientoRojo.jpg",
+        "code": "C008",
+        "stock": 40
+    },
+    {
+        "id": 7,
+        "title": "Espinaca",
+        "description": "Espinaca fresca y nutritiva",
+        "price": 450,
+        "thumbnail": "espinaca.jpg",
+        "code": "C012",
+        "stock": 70
+    },
+    {
+        "id": 8,
+        "title": "Pepino",
+        "description": "Pepino verde y refrescante",
+        "price": 350,
+        "thumbnail": "pepino.jpg",
+        "code": "C014",
+        "stock": 90
+    },
+    {
+        "id": 9,
+        "title": "Batata",
+        "description": "Batata naranja dulce",
+        "price": 550,
+        "thumbnail": "batata.jpg",
+        "code": "C021",
+        "stock": 55
+    },
+    {
+        "id": 10,
+        "title": "Remolacha",
+        "description": "Remolacha roja fresca",
+        "price": 650,
+        "thumbnail": "remolacha.jpg",
+        "code": "C023",
+        "stock": 75
+    }
+]

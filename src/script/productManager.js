@@ -1,8 +1,9 @@
-const fs = require("fs");
+import fs from "fs";
 
-class ProductManager {
+export class ProductManager {
+  
   constructor (){
-    this.path = "./products.json"
+    this.path = "./src/db/products.json"
     this.id = 1
     try {
         const data = fs.readFileSync(this.path, 'utf-8');
@@ -23,7 +24,7 @@ class ProductManager {
       stock,
     };
       this.products.push(addNewProduct);
-      console.log("Producto agregado: ", addNewProduct);
+      // console.log("Producto agregado: ", addNewProduct);
 
     await fs.promises.writeFile(
       this.path,
@@ -35,9 +36,8 @@ class ProductManager {
     try {
       const readFile = await fs.promises.readFile(this.path, "utf-8");
 
-      const objetProduct = JSON.parse(readFile);
+      return JSON.parse(readFile);
 
-      return objetProduct;
     } catch (error) {
       console.error("Error al obtener productos", error);
     }
@@ -103,63 +103,9 @@ class ProductManager {
         this.path,
         JSON.stringify(this.products, null, "\t")
       );
-      console.log(`Producto con el id ${id} ha sido eliminado con exito!`);
+      // console.log(`Producto con el id ${id} ha sido eliminado con exito!`);
     }
   }
 }
 const products = new ProductManager();
 
-async function addProductDetails() {
-  await products.addProduct(
-    "Papa blanca",
-    "Papa blanca de alta calidad",
-    600,
-    "papaBlanca.jpg",
-    "C002",
-    70
-  );
-
-  await products.addProduct(
-    "Papa negra",
-    "Papa negra de alta calidad y economica",
-    400,
-    "papaNegra.jpg",
-    "C003",
-    30
-  );
-
-  await products.addProduct(
-    "batata",
-    "Deliciosa batata fresca",
-    700,
-    "batata.jpg",
-    "C004",
-    60
-  );
-  await products.addProduct(
-    "Cebolla",
-    "Cebolla blanca de alta calidad",
-    900,
-    "cebollaBlanca.jpg",
-    "C017",
-    80
-  );
-}
-async function executeOperations() {
-  await addProductDetails();
-
-  console.log("Busqueda por ID: \n", await products.getProductById(1));
-  console.log ("Producto actualizado: " , await products.updateProduct(3, {
-    title: "Zanahoria",
-    description: "Deliciosa zanahoria fresca",
-    price: 300,
-    thumbnail: "zanahoria.jpg",
-    code: "C019",
-    stock: 100
-  }));
-  console.log(await products.deleteProduct(1));
-  console.log("Listado final:", await products.getProducts());// Listado final con producto modificado y id 1 eliminado
-}
-
-
-executeOperations();

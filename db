@@ -1,5 +1,14 @@
 [
 	{
+		"id": 1,
+		"title": "Papa blanca",
+		"description": "Papa blanca de alta calidad",
+		"price": 600,
+		"thumbnail": "papaBlanca.jpg",
+		"code": "C002",
+		"stock": 70
+	},
+	{
 		"id": 2,
 		"title": "Papa negra",
 		"description": "Papa negra de alta calidad y economica",
@@ -10,12 +19,12 @@
 	},
 	{
 		"id": 3,
-		"title": "Zanahoria",
-		"description": "Deliciosa zanahoria fresca",
-		"price": 300,
-		"thumbnail": "zanahoria.jpg",
-		"code": "C019",
-		"stock": 100
+		"title": "batata",
+		"description": "Deliciosa batata fresca",
+		"price": 700,
+		"thumbnail": "batata.jpg",
+		"code": "C004",
+		"stock": 60
 	},
 	{
 		"id": 4,
